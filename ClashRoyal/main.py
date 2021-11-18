@@ -1,6 +1,9 @@
 import pandas as pd
 import numpy as np
 
-archivo = '/archivos/clashrds.csv'
-datos = pd.DataFrame(archivo)
-print(datos)
+
+datos = pd.read_csv('clashrds.csv')
+#print(datos)
+
+df = pd.DataFrame(datos, columns=['Card', 'Cost', 'Type'])
+print(df)
